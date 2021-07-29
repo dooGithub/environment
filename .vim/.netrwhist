@@ -1,0 +1,9 @@
+let g:netrw_dirhistmax  =10
+let g:netrw_dirhistcnt =7
+let g:netrw_dirhist_7='/home/jongdoo/Study/algorithms'
+let g:netrw_dirhist_6='/home/jongdoo/kaggle-titanic'
+let g:netrw_dirhist_5='/home/jongdoo/kaggle-titanic/images'
+let g:netrw_dirhist_4='/home/jongdoo'
+let g:netrw_dirhist_3='/home/jongdoo/kaggle'
+let g:netrw_dirhist_2='/home/jongdoo/.kaggle'
+let g:netrw_dirhist_1='/mnt/d/algorithms'
