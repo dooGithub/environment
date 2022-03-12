@@ -1,7 +1,22 @@
+set rtp+=~/.vim/bundle/Vundle.vim
+call vundle#begin()
+	Plugin 'VundleVim/Vundle.vim'
+	Plugin 'tComment'
+	Plugin 'The-NERD-tree'
+	Plugin 'Mark'
+	Plugin 'AutoClose'
+
+call vundle#end()
+
+let mapleader=","
+
+"custom map"
+nnoremap <Leader>rc :rightbelow vnew $MYVIMRC<CR>
+
 " Common
 set nobackup		" backup file 안만듬
 set noswapfile
-set wildignorecase	"Ignore the case sensitive when using tab autocompletion
+set wildignorecase	" Ignore the case sensitive when using tab autocompletion
 
 " indentation
 set autoindent		" 자동 들여쓰기
@@ -10,6 +25,7 @@ set cindent			" C 프로그래밍용 자동 들여쓰기
 set ruler
 set number
 set ignorecase		" 검색시 대소문자 무시
+set cursorline
 
 " Tab size
 set ts=4
@@ -33,18 +49,14 @@ nnoremap <C-l> o<ESC>
 " Disable highlighted search word.
 nmap t :let @/=""<CR>
 
-" 
+" NERDTree configuration
 nmap <C-j><C-j> :NERDTreeToggle<CR>
+nmap <C-/> :TComment<CR>
 
 set nocompatible
 
-set rtp+=~/.vim/bundle/Vundle.vim
-call vundle#begin()
-	Plugin 'VundleVim/Vundle.vim'
-	Plugin 'tComment'
-	Plugin 'The-NERD-tree'
-	Plugin 'Mark'
-	Plugin 'AutoClose'
+" Plugin Mapping
+map <F4> <Plug>MarkClear
+map <F5> <Plug>MarkSet
 
-call vundle#end()
 
